@@ -1,0 +1,27 @@
+{
+  "name": "code-signal-journey",
+  "version": "1.0.0",
+  "description": "My  Code signal journey on https://app.codesignal.com/",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --fix",
+    "tsc": "tsc && npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DustinDust/Code-Signal-Journey.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DustinDust/Code-Signal-Journey/issues"
+  },
+  "homepage": "https://github.com/DustinDust/Code-Signal-Journey#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.0.1",
+    "eslint-config-google": "^0.14.0"
+  }
+}
