@@ -1,6 +1,6 @@
 const rectangleRotation = (a, b) => {
-  let l = a / Math.sqrt(2) / 2;
-  let s = b / Math.sqrt(2) / 2;
+  const l = a / Math.sqrt(2) / 2;
+  const s = b / Math.sqrt(2) / 2;
   rect1 = [Math.floor(l) * 2 + 1, Math.floor(s) * 2 + 1];
   rect2 = rect1.slice();
 

@@ -1,13 +1,13 @@
 const chessKnight = (cell) => {
   const moves = [
-    { hor: 1, ver: 2 },
-    { hor: 2, ver: 1 },
-    { hor: -2, ver: 1 },
-    { hor: -1, ver: 2 },
-    { hor: -2, ver: -1 },
-    { hor: -1, ver: -2 },
-    { hor: 1, ver: -2 },
-    { hor: 2, ver: -1 },
+    {hor: 1, ver: 2},
+    {hor: 2, ver: 1},
+    {hor: -2, ver: 1},
+    {hor: -1, ver: 2},
+    {hor: -2, ver: -1},
+    {hor: -1, ver: -2},
+    {hor: 1, ver: -2},
+    {hor: 2, ver: -1},
   ];
 
   return moves.reduce((ans, currentMove) => {

@@ -1,5 +1,5 @@
 const makeArrayConsecutive2 = (statues) => {
-  let ar = statues.sort((a, b) => {
+  const ar = statues.sort((a, b) => {
     return a - b;
   });
   return [...ar].slice(1).reduce((ans, value, index) => {

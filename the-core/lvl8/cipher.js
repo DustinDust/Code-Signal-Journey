@@ -1,6 +1,6 @@
 const isSubstitutionCipher = (string1, string2) => {
-  let isConvertible = (to, from) => {
-    let map = {};
+  const isConvertible = (to, from) => {
+    const map = {};
     for (let i = 0; i < to.length; i++) {
       if (!map.hasOwnProperty(to[i])) {
         map[to[i]] = from[i];

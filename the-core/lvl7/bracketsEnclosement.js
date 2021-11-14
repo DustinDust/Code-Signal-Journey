@@ -1,3 +1,3 @@
 const encloseInBrackets = (inputString) => {
-  return "(" + inputString + ")";
-}
+  return '(' + inputString + ')';
+};
