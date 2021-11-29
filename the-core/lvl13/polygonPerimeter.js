@@ -21,9 +21,9 @@ const solution = (matrix) => {
 };
 
 console.log(
-  solution([
-    [false, true, true],
-    [true, true, false],
-    [true, false, false],
-  ])
+    solution([
+      [false, true, true],
+      [true, true, false],
+      [true, false, false],
+    ])
 );
