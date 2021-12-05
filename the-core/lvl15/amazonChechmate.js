@@ -33,8 +33,12 @@ const solution = (king, amazon) => {
       return false;
     }
     for (let i = 0; i < knightMoves.length; i++) {
-      if (amazonPos[1] + knightMoves[i].ver === pos[1]) return false;
-      if (amazonPos[0] + knightMoves[i].hor === pos[0]) return false;
+      if (
+        amazonPos[1] + knightMoves[i].ver === pos[1] &&
+        amazonPos[0] + knightMoves[i].hor === pos[0]
+      ) {
+        return false;
+      }
     }
     if (
       Math.abs(kingPos[0] - pos[0]) <= 1 &&
@@ -64,7 +68,7 @@ const solution = (king, amazon) => {
   let safe = 0;
   for (let i = 1; i <= 8; i++) {
     for (let j = 1; j <= 8; j++) {
-      console.log([i, j]);
+      // console.log([i, j]);
       if (kingPos[0] === i && kingPos[1] == j) continue;
       if (amazonPos[0] === i && amazonPos[1] === j) continue;
       if (!isValid([i, j])) continue;
