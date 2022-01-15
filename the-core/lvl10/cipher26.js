@@ -11,14 +11,16 @@ const solution = (message) => {
   for (const ch of message) {
     const currentChar = charToNum[ch];
     if (currentChar >= curr % 26) {
-      console.log('the character to be entered', currentChar - (curr % 26));
+      // for debugging
+      // console.log('the character to be entered', currentChar - (curr % 26));
       res += numToChar[currentChar - (curr % 26)];
       curr += currentChar - (curr % 26);
     } else {
-      console.log(
-        'the character to be entered',
-        26 + currentChar - (curr % 26)
-      );
+      // for debugging
+      // console.log(
+      //     'the character to be entered',
+      //     26 + currentChar - (curr % 26)
+      // );
       res += numToChar[26 + currentChar - (curr % 26)];
       curr += currentChar - (curr % 26);
     }
